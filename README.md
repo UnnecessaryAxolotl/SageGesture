@@ -1,11 +1,11 @@
 # SageGesture
 Minimalist CLI/GUI Gesture Drawing software based on a Kivy docs example.
 
-Installation:
+Installation: Simply install the dependencies
 
   Dependencies: 
-   kivy 1.9.0 or later
-   Python 3.9
+   kivy 1.9.0 or later (pip3 install kivy)
+   Python 3.9 (https://www.python.org/)
 
   Usage:
     replace the UNAME constant with your username as a string.
