@@ -1,13 +1,12 @@
 # import kivy module     
 import kivy   
 import sys, os
-import time
 
 UNAME = "lorem"
 # base Class of your App inherits from the App class.     
 # app:always refers to the instance of your application    
 from kivy.app import App  
-caroSize = len(os.listdir('c:/users/'+ UNAME + '/Pictures/caro/'))
+caroSize = len(os.listdir('c:/users/' + UNAME + '/Pictures/caro/'))
 
 # this restrict the kivy version i.e   
 # below this kivy version you cannot   
@@ -18,7 +17,7 @@ from kivy.uix.image import AsyncImage
 from kivy.clock import Clock
 from kivy.uix.carousel import Carousel 
   
-Timing = int(input("Minutes per frame: ")) * 60
+Timing = int(input("Seconds per frame: "))
 # Create the App class 
 class CarouselApp(App): 
     def build(self): 
