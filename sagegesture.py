@@ -2,10 +2,12 @@
 import kivy   
 import sys, os
 import time
+
+UNAME = "lorem"
 # base Class of your App inherits from the App class.     
 # app:always refers to the instance of your application    
 from kivy.app import App  
-caroSize = len(os.listdir('c:/users/maste/Pictures/caro/'))
+caroSize = len(os.listdir('c:/users/'+ UNAME + '/Pictures/caro/'))
 
 # this restrict the kivy version i.e   
 # below this kivy version you cannot   
@@ -27,7 +29,7 @@ class CarouselApp(App):
   
         # Adding 10 slides 
         for i in range(caroSize): 
-            src = "c:/users/maste/Pictures/caro/%d.png" %i 
+            src = "c:/users/' + UNAME + '/Pictures/caro/%d.png" %i 
             # using Asynchronous image             
             image = AsyncImage(source = src, allow_stretch = True) 
             carousel.add_widget(image)
